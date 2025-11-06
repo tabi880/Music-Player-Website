@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+    <!-- Link To CSS-->
+    <link rel="stylesheet" type="text/css" href="tabi.css">
+</head>
+<style>
+    body
+    {background-image:url('26.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100%100%;
+}
+</style>
+<body background="34.jpg">
+    <a name="about"></a>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#"><b>HOME</b></a></li>
+                <li><a href="#ABOUT"><b>ABOUT</b></a></li>
+                <li><a href="#"><b>SPECIFICATIONS</b></a></li>
+                <li><a href="#"><b>PRODUCTS</b></a></li>
+                <li><a href="#"><b>CONNECT</b></a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                    <h1>THE <br>REAL<br>SOUND</h1>
+            </div>
+            <div class="right-col">
+                <p><b>Click Here To Listen</b></p>
+                <img src="play.png" id="icon">
+            </div>
+        </div>
+    </div>
+    <audio id="mySong">
+        <source src="song.mp3.mp4" type="audio/mp4">
+        <source src="song1.mp3.mp4" type="audio/mp4">
+    </audio>
+    <script>
+        var mySong=document.getElementById("mySong");
+        var icon=document.getElementById("icon");
+        icon.onclick = function(){
+           if(mySong.paused){
+            mySong.play();
+            icon.src="pause.png";
+           }else{
+            mySong.pause();
+            icon.src="play.png";
+           }
+        }
+    </script>
+    <H3 align="center"><br>ABOUT US</H3>
+    <br>
+    <a name="ABOUT"></a>
+   <p><center>This website is for entertainment.Come visit this website and spend your time to listen beautiful song</center></p>
+    <br><br>
+    <h4 align="center">
+        <font face="calibri light" color="pink">
+        Copyright reserved 2024 powered by gAaMa</font>
+    </h4>
+</body>
+</html>
